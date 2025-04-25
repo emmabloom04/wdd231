@@ -171,3 +171,28 @@ svg {
   background-color: var(--bs-black);
   fill: white;
 }
+
+.disclaimer {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2%;
+  text-align: left;
+}
+
+.logo-label, .site-title, .hero-banner-title, .hero-banner-subtitle {
+  font: var(--bs-font-serif);
+  text-decoration: none;
+}
+
+.global-header-, .hero-banner-title {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+.park-nav ul {
+  display: flex;
+  background-color: var(--bs-black);
+}
