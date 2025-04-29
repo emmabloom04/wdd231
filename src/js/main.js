@@ -1,10 +1,11 @@
 import { getParkData } from "./parkService.mjs";
 
+// this function is from the parkService.mjs
 const parkData = getParkData();
 
 function parkInfoTemplate(info) {
     return `<a href="/" class="hero-banner-title">${info.name}</a>
-    <p class="hero-banner-subtitle"
+    <p class="hero-banner-subtitle">
     <span>${info.designation}</span>
     <span>${info.states}</span>
     </p>`;
