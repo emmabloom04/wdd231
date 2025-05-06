@@ -39,5 +39,5 @@ export function footerTemplate(info) {
             </div>
             <h4>Phone:</h4>
             <p>${voice.phoneNumber}</p>
-        </section>`;
+            </section>`;
 }
