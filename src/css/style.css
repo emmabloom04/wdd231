@@ -335,3 +335,15 @@ svg {
 .contact h4 {
   font-weight: 800;
 }
+
+@media (max-width: 1024px) {
+  .info {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .info {
+    display: block;
+  }
+}
