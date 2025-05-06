@@ -37,9 +37,13 @@ function setIntro(data) {
 function setInfo(data) {
   const info = document.querySelector(".info");
   function mediaCardTemplate(data) {
-    return `<img src="${data.image}" alt="">
-            <h2>${data.name}</h2>
-            <p>${data.description}</p>`;
+    return `<div class="media-card">
+            <a href=${data.link}>
+            <img src="${data.image}" alt="${data.name}" class="media-card__img">
+            <h3 class="media-card__title">${data.name}</h3>
+            </a>
+            <p>${data.description}</p>
+            </div>`;
   }
 
   const parkInfoLinks = [
