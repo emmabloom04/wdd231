@@ -308,3 +308,10 @@ svg {
   column-gap: 15px;
   margin: 15px;
 }
+
+#park-footer {
+  background-image: url('footer-img.png');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
