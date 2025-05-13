@@ -1,0 +1,16 @@
+#park-footer {
+  background-image: url('footer-img.png');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.contact h3 {
+  font-family: var(--bs-font-serif);
+  text-transform: uppercase;
+}
+
+.contact h4 {
+  font-weight: 800;
+}

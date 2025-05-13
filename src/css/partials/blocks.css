@@ -1,0 +1,24 @@
+.intro, .info, #park-footer, .media-card a {
+  color: black;
+}
+
+.intro {
+  margin: 50px 30px 50px 30px;
+}
+
+.intro h1 {
+  font-family: var(--bs-font-serif);
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.media-card a {
+  text-decoration: none;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  margin: 30px;
+}
