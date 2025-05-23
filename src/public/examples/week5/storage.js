@@ -27,6 +27,7 @@ function newTask() {
   tasks.push({ detail: task, completed: false });
   // render out the list
   renderTasks(tasks);
+  storeTaskList(tasks);
 }
 
 function removeTask(taskElement) {
@@ -57,11 +58,42 @@ function manageTasks(e) {
   if (e.target.dataset.action === "complete") {
     completeTask(parent);
   }
+  storeTaskList(tasks);
+}
+
+function addUsername(e) {
+    const name = document.getElementById("username").value;
+
+    document.querySelector(".user").innerText = name;
+    localStorage.setItem("list-user", name);
+}
+
+function setUsername() {
+    const name = localStorage.getItem("list-user");
+    if (name) {
+        document.querySelector(".user").innerText = name;
+        document.getElementById("user-name-section").style.display = "none";
+    }
+}
+
+function storeTaskList(taskList) {
+    localStorage.setItem("todo-list", JSON.stringify(taskList))
+}
+
+function loadTasks() {
+    const myList = localStorage.getItem("todo-list");
+    if (myList) {
+        tasks = JSON.parse(myList)
+    }
 }
 
 // Add your event listeners here
 document.querySelector("#submitTask").addEventListener("click", newTask);
 document.querySelector("#todoList").addEventListener("click", manageTasks);
 
-// render  the initial list of tasks (if any) when the page loads
+document.querySelector("#addName").addEventListener("click", addUsername)
+
+// render the initial list of tasks (if any) when the page loads
+loadTasks();
 renderTasks(tasks);
+setUsername();
