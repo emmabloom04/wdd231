@@ -1,7 +1,7 @@
 #park-footer {
-  background-image: url('footer-img.png');
+  background-image: url("footer-img.png");
   background-size: cover;
-  background-position: center; 
+  background-position: center;
   background-repeat: no-repeat;
   padding: 20px;
 }

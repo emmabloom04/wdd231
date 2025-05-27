@@ -6,4 +6,4 @@ async function init() {
   setHeaderFooter(parkData);
 }
 
-init()
+init();

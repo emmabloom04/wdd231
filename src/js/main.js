@@ -14,7 +14,6 @@ export function setParkInfoLinks(data) {
   info.insertAdjacentHTML("afterbegin", html.join(""));
 }
 
-
 async function init() {
   const parkData = await getParkData();
   const links = getInfoLinks(parkData.images);

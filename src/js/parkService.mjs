@@ -5,8 +5,8 @@ async function getJson(url) {
   const options = {
     method: "GET",
     headers: {
-      "X-Api-Key": apiKey
-    }
+      "X-Api-Key": apiKey,
+    },
   };
   let data = {};
   const response = await fetch(baseUrl + url, options);
