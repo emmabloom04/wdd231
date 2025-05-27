@@ -6,10 +6,6 @@
   text-align: left;
 }
 
-.disclaimer a {
-  color: var(--bs-link-color);
-}
-
 .global-header {
   background-color: var(--bs-black);
   display: flex;

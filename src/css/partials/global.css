@@ -19,6 +19,10 @@ a:visited {
   color: var(--bs-white);
 }
 
+.disclaimer a {
+  color: var(--bs-link-color);
+}
+
 a:hover {
   color: var(--bs-highlight-bg);
 }
