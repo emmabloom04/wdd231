@@ -17,4 +17,4 @@ Use this as a starting point to complete the WDD 231 personal activity. We will 
 
 - `npm run build` to build final files when you are ready to turn in.
 
-Webite URL: [bespoke-quokka-ec9d77](https://teal-haupia-3fbedf.netlify.app/)
+Webite URL: [bespoke-quokka-ec9d77](https://bespoke-quokka-ec9d77.netlify.app/)
