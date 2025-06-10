@@ -55,7 +55,7 @@ function QuotesTemplate(quote) {
 
 button.addEventListener("click", async () => {
   try {
-    const quotesData = await LoadQuotes();
+    await LoadQuotes();
   } catch (error) {
     console.error("Failed to load quotes:", error);
   }
