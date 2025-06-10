@@ -26,7 +26,7 @@ li {
 button {
     background-color: #3B00F7;
     animation: pulse 2s infinite ease-in-out;
-    border: solid 0px black;
+    border: solid 0.5px black;
     padding: 1rem;
     margin: 1rem;
     color: white;
