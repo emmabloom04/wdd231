@@ -1,0 +1,34 @@
+.hidden {
+    display: none;
+}
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1rem;
+}
+ul {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+li {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+button {
+    background-color: #3B00F7;
+    animation: pulse 2s infinite ease-in-out;
+    border: solid 0px black;
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+    font-size: 1rem;
+}
