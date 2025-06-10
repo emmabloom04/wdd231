@@ -15,12 +15,15 @@ li {
 @keyframes pulse {
     0% {
         transform: scale(1);
+        box-shadow: 0 0 5px #B399FF;
     }
     50% {
         transform: scale(1.1);
+        box-shadow: 0 0 20px #B399FF;
     }
     100% {
         transform: scale(1);
+        box-shadow: 0 0 5px #B399FF;
     }
 }
 button {
