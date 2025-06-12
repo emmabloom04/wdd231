@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Practice</title>
+    <style>
+        .modal-container {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+            background-color: beige;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .modal-content {
+            height: 150px;
+            width: 400px;
+            margin: 200px auto;
+            background-color: aliceblue;
+            border: 5px solid black;
+            text-align: center;
+        }
+        .hide-modal {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="normal-content">
+        <h1>Modal practice</h1>
+        <h2>Section 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, vero voluptates omnis sapiente reprehenderit sit dolor consequatur iure ad repudiandae culpa, commodi delectus deleniti minima sint tempore porro error ducimus architecto rerum? Reprehenderit molestiae voluptates voluptate laborum illum, repellat explicabo!</p>
+        <h2>Section 2</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione sint, eligendi ad quia distinctio molestias non quisquam ab eius, vitae eum ex accusamus? Vitae eum nihil deserunt iste odio cupiditate?</p>
+        <h2>Section 3</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut ab iusto, cumque cum commodi saepe possimus perferendis qui earum illo.</p>
+        <button id="message">Click here for a VERY IMPORTANT MESSAGE!</button>
+    </div>
+    <div class="modal-container hide-modal" aria-hidden="true">
+        <div class="modal-content">
+            <h3>Very Important Message</h3>
+            <p>The church is true!</p>
+            <button id="dismiss">You're right!</button>
+        </div>
+    </div>
+    <script>
+        function ShowModal() {
+            document.querySelector(".modal-container").classList.remove("hide-modal");
+            document.querySelector(".modal-container").setAttribute("aria-hidden", "false");
+        }
+        function HideModal() {
+            document.querySelector(".modal-container").classList.add("hide-modal");
+            document.querySelector(".modal-container").setAttribute("aria-hidden", "true");
+        }
+        document.getElementById("message").addEventListener("click", () => {
+            ShowModal();
+        })
+        document.getElementById("dismiss").addEventListener("click", () => {
+            HideModal();
+        })
+        document.addEventListener("keydown", (event) => {
+            console.log(event);
+            if (event.key === "Escape") {
+                HideModal();
+            }
+        })
+        document.querySelector(".modal-container").addEventListener("click", () => {
+            HideModal();
+        })
+    </script>
+</body>
+</html>
